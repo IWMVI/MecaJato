@@ -1,1 +1,20 @@
-{% extends "index.html" %}
+{% extends 'index.html' %}
+{% load static %}
+
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'clients/css/clients.css' %}">
+{% endblock 'head' %}
+
+{% block 'dashboard' %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md card-dashboard">
+                <p class="text-card">Adicionar clientes</p>
+            </div>
+            <div class="col-md card-dashboard">
+                <p class="text-card">Atualizar clientes</p>
+            </div>
+        </div>
+        
+    </div>
+{% endblock 'dashboard' %}
